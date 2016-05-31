@@ -1,22 +1,24 @@
 //
-//  fourthViewController.m
+//  demo3.m
 //  MyApp
 //
-//  Created by Orient on 16/5/25.
+//  Created by Orient on 16/5/31.
 //  Copyright © 2016年 Orient. All rights reserved.
 //
 
-#import "fourthViewController.h"
+#import "demo3.h"
 
-@interface fourthViewController ()
+@interface demo3 ()
 
 @end
 
-@implementation fourthViewController
+@implementation demo3
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor purpleColor];
+
 }
 
 - (void)didReceiveMemoryWarning {

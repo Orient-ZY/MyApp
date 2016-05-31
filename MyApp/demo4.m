@@ -1,24 +1,23 @@
 //
-//  thirdViewController.m
+//  demo4.m
 //  MyApp
 //
-//  Created by Orient on 16/5/25.
+//  Created by Orient on 16/5/31.
 //  Copyright © 2016年 Orient. All rights reserved.
 //
 
-#import "thirdViewController.h"
+#import "demo4.h"
 
-@interface thirdViewController ()
+@interface demo4 ()
 
 @end
 
-@implementation thirdViewController
+@implementation demo4
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor grayColor];
-
+    self.view.backgroundColor = [UIColor orangeColor];
 
 }
 

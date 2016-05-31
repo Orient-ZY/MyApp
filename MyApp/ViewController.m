@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    tabBarController *tbVC = [[tabBarController alloc] init];
-//    
-//    [self addChildViewController:tbVC];
+    tabBarController *tbVC = [[tabBarController alloc] init];
+    
+    [self addChildViewController:tbVC];
 
 }
 

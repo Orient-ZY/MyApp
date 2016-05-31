@@ -8,10 +8,10 @@
 
 #import "tabBarController.h"
 #import "navigationController.h"
-#import "firstViewController.h"
-#import "secondViewController.h"
-#import "thirdViewController.h"
-#import "fourthViewController.h"
+#import "firstTableViewController.h"
+#import "secondTableViewController.h"
+#import "thirdTableViewController.h"
+#import "fourthTableViewController.h"
 
 @interface tabBarController ()
 
@@ -28,16 +28,16 @@
 
 - (void)setUpAllChildViewController{
     
-    firstViewController *first = [[firstViewController alloc] init];
+    firstTableViewController *first = [[firstTableViewController alloc] init];
     [self setUpOneChildViewController:first image:[UIImage imageNamed:@"tab_home_icon"] title:@"首页"];
     
-    secondViewController *second = [[secondViewController alloc] init];
+    secondTableViewController *second = [[secondTableViewController alloc] init];
     [self setUpOneChildViewController:second image:[UIImage imageNamed:@"js"] title:@"技术"];
     
-    thirdViewController *third = [[thirdViewController alloc] init];
+    thirdTableViewController *third = [[thirdTableViewController alloc] init];
     [self setUpOneChildViewController:third image:[UIImage imageNamed:@"qw"] title:@"博文"];
     
-    fourthViewController *fourth = [[fourthViewController alloc] init];
+    fourthTableViewController *fourth = [[fourthTableViewController alloc] init];
     [self setUpOneChildViewController:fourth image:[UIImage imageNamed:@"user"] title:@"我的"];
 }
 

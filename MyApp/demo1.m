@@ -1,32 +1,41 @@
 //
-//  firstViewController.m
+//  demo1.m
 //  MyApp
 //
-//  Created by Orient on 16/5/25.
+//  Created by Orient on 16/5/31.
 //  Copyright © 2016年 Orient. All rights reserved.
 //
 
-#import "firstViewController.h"
+#import "demo1.h"
+#import "demo2.h"
 
-@interface firstViewController ()
+@interface demo1 ()
 
 @end
 
-@implementation firstViewController
+@implementation demo1
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor whiteColor];
-
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btn setTitle:@"Press here" forState:UIControlStateNormal];
+    [btn setFrame:CGRectMake(100, 100, 100, 60)];
+    [btn addTarget:self action:@selector(jumpDemo2:) forControlEvents:UIControlEventTouchDragInside];
+    
+    [self.view addSubview:btn];
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//- (void)jumpDemo2:(id)sender {
+// 
+//    [self presentViewController:[[demo2 alloc] init] animated:YES completion:nil];
+//    
+//}
 
 /*
 #pragma mark - Navigation
